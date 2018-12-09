@@ -9,9 +9,11 @@
     "lint": "eslint . --max-warnings 0",
     "typecheck": "flow",
     "test-src": "jest",
-    "test": "npm run lint && npm run typecheck && npm run test-src"
+    "test": "npm run lint && npm run typecheck && npm run test-src",
+    "server": "nodemon --exec babel-node src/main.js"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "node-fetch": "^1.7.3"
   },
   "devDependencies": {
@@ -28,7 +30,9 @@
     "eslint-plugin-flowtype": "^2.35.1",
     "flow-bin": "^0.54.1",
     "flow-typed": "^2.1.5",
-    "jest": "^21.0.1"
+    "jest": "^21.0.1",
+    "nodemon": "^1.18.7",
+    "npx": "^10.2.0"
   },
   "keywords": [],
   "author": "",
