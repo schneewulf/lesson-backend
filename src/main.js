@@ -3,7 +3,7 @@ require('dotenv').config();
 import express from 'express';
 import fetch from 'node-fetch';
 const app = express();
-const port = 3000;
+const port = 80;
 const dukcapilHost = process.env.DUKCAPIL_HOST || 'localhost:3000';
 app.get('/', (req, res) => res.send('Hello World!'));
 app.get('/item/:id', async(req, res) => {
